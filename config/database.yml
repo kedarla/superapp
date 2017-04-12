@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: iris_development
+  database: testcap_development
   pool: 5
   username: postgres
   password: postgres
