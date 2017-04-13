@@ -26,11 +26,13 @@ namespace :deploy do
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
     	 
+       execute "cd #{ current_path }/shared/config/database.yml #{ current_path }/config/database.yml"
+
        execute "cd #{ current_path } && source ~/.rvm/scripts/rvm && rvm use 2.3.1 && rvm gemset use global && bundle install"
        
     	 execute "cd #{ current_path } && source ~/.rvm/scripts/rvm && rvm use 2.3.1 && rvm gemset use global && rake db:drop && rake db:create && rake db:migrate"
        
-        # execute "cd #{ current_path } && source ~/.rvm/scripts/rvm && rvm use 2.3.1 && rvm gemset use global && rails s -p 3001 -b0.0.0.0"
+       execute "cd #{ current_path } && source ~/.rvm/scripts/rvm && rvm use 2.3.1 && rvm gemset use global && puma stop && puma start"
       
     	
  
