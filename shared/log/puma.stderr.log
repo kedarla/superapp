@@ -1,0 +1,80 @@
+ 
+=== puma startup: 2017-04-13 15:44:55 +0530 ===
+=== puma startup: 2017-04-13 15:45:26 +0530 ===
+=== puma startup: 2017-04-13 15:46:00 +0530 ===
+2017-04-13 15:46:23 +0530: Rack app error handling request { GET / }
+#<RuntimeError: Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml`>
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/railties-5.0.2/lib/rails/application.rb:513:in `validate_secret_key_config!'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/railties-5.0.2/lib/rails/application.rb:246:in `env_config'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/railties-5.0.2/lib/rails/engine.rb:693:in `build_request'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/railties-5.0.2/lib/rails/application.rb:521:in `build_request'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/railties-5.0.2/lib/rails/engine.rb:521:in `call'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/configuration.rb:224:in `call'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/server.rb:600:in `handle_request'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/server.rb:435:in `process_client'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/server.rb:299:in `block in run'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+2017-04-13 15:46:23 +0530: Rack app error handling request { GET /favicon.ico }
+#<RuntimeError: Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml`>
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/railties-5.0.2/lib/rails/application.rb:513:in `validate_secret_key_config!'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/railties-5.0.2/lib/rails/application.rb:246:in `env_config'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/railties-5.0.2/lib/rails/engine.rb:693:in `build_request'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/railties-5.0.2/lib/rails/application.rb:521:in `build_request'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/railties-5.0.2/lib/rails/engine.rb:521:in `call'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/configuration.rb:224:in `call'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/server.rb:600:in `handle_request'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/server.rb:435:in `process_client'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/server.rb:299:in `block in run'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+=== puma startup: 2017-04-13 15:46:45 +0530 ===
+2017-04-13 15:46:50 +0530: Rack app error handling request { GET / }
+#<RuntimeError: Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml`>
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/railties-5.0.2/lib/rails/application.rb:513:in `validate_secret_key_config!'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/railties-5.0.2/lib/rails/application.rb:246:in `env_config'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/railties-5.0.2/lib/rails/engine.rb:693:in `build_request'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/railties-5.0.2/lib/rails/application.rb:521:in `build_request'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/railties-5.0.2/lib/rails/engine.rb:521:in `call'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/configuration.rb:224:in `call'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/server.rb:600:in `handle_request'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/server.rb:435:in `process_client'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/server.rb:299:in `block in run'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+2017-04-13 15:46:51 +0530: Rack app error handling request { GET / }
+#<RuntimeError: Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml`>
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/railties-5.0.2/lib/rails/application.rb:513:in `validate_secret_key_config!'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/railties-5.0.2/lib/rails/application.rb:246:in `env_config'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/railties-5.0.2/lib/rails/engine.rb:693:in `build_request'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/railties-5.0.2/lib/rails/application.rb:521:in `build_request'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/railties-5.0.2/lib/rails/engine.rb:521:in `call'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/configuration.rb:224:in `call'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/server.rb:600:in `handle_request'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/server.rb:435:in `process_client'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/server.rb:299:in `block in run'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+2017-04-13 15:47:13 +0530: Rack app error handling request { GET / }
+#<RuntimeError: Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml`>
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/railties-5.0.2/lib/rails/application.rb:513:in `validate_secret_key_config!'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/railties-5.0.2/lib/rails/application.rb:246:in `env_config'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/railties-5.0.2/lib/rails/engine.rb:693:in `build_request'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/railties-5.0.2/lib/rails/application.rb:521:in `build_request'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/railties-5.0.2/lib/rails/engine.rb:521:in `call'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/configuration.rb:224:in `call'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/server.rb:600:in `handle_request'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/server.rb:435:in `process_client'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/server.rb:299:in `block in run'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+=== puma startup: 2017-04-13 15:49:14 +0530 ===
+2017-04-13 15:49:20 +0530: Rack app error handling request { GET / }
+#<RuntimeError: Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml`>
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/railties-5.0.2/lib/rails/application.rb:513:in `validate_secret_key_config!'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/railties-5.0.2/lib/rails/application.rb:246:in `env_config'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/railties-5.0.2/lib/rails/engine.rb:693:in `build_request'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/railties-5.0.2/lib/rails/application.rb:521:in `build_request'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/railties-5.0.2/lib/rails/engine.rb:521:in `call'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/configuration.rb:224:in `call'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/server.rb:600:in `handle_request'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/server.rb:435:in `process_client'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/server.rb:299:in `block in run'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+=== puma startup: 2017-04-13 15:54:17 +0530 ===
+=== puma startup: 2017-04-13 16:01:33 +0530 ===

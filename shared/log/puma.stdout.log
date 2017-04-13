@@ -1,0 +1,82 @@
+ 
+=== puma startup: 2017-04-13 15:44:55 +0530 ===
+[6258] * Starting control server on unix:///tmp/puma-status-1492078495032-6258
+[6258] - Worker 0 (pid: 6265) booted, phase: 0
+[6258] - Worker 1 (pid: 6269) booted, phase: 0
+[6258] - Gracefully shutting down workers...
+[6258] === puma shutdown: 2017-04-13 15:45:00 +0530 ===
+[6258] - Goodbye!
+Exiting
+=== puma startup: 2017-04-13 15:45:26 +0530 ===
+[6314] * Starting control server on unix:///tmp/puma-status-1492078526477-6314
+[6314] - Worker 1 (pid: 6325) booted, phase: 0
+[6314] - Worker 0 (pid: 6321) booted, phase: 0
+[6314] - Gracefully shutting down workers...
+[6314] === puma shutdown: 2017-04-13 15:45:27 +0530 ===
+[6314] - Goodbye!
+Exiting
+=== puma startup: 2017-04-13 15:46:00 +0530 ===
+[6368] * Starting control server on unix:///tmp/puma-status-1492078560688-6368
+[6368] - Worker 1 (pid: 6378) booted, phase: 0
+[6368] - Worker 0 (pid: 6374) booted, phase: 0
+[6368] - Gracefully shutting down workers...
+[6368] === puma shutdown: 2017-04-13 15:46:40 +0530 ===
+[6368] - Goodbye!
+=== puma startup: 2017-04-13 15:46:45 +0530 ===
+[6441] * Starting control server on unix:///tmp/puma-status-1492078605512-6436
+[6441] - Worker 1 (pid: 6455) booted, phase: 0
+[6441] - Worker 0 (pid: 6451) booted, phase: 0
+[6441] - Gracefully shutting down workers...
+[6441] === puma shutdown: 2017-04-13 15:48:52 +0530 ===
+[6441] - Goodbye!
+=== puma startup: 2017-04-13 15:49:14 +0530 ===
+[6542] * Starting control server on unix:///tmp/puma-status-1492078754816-6542
+[6542] - Worker 0 (pid: 6548) booted, phase: 0
+[6542] - Worker 1 (pid: 6552) booted, phase: 0
+[6542] - Gracefully shutting down workers...
+[6542] === puma shutdown: 2017-04-13 15:49:22 +0530 ===
+[6542] - Goodbye!
+No such file or directory - connect(2) for /tmp/puma-status-1492078754816-6542
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/control_cli.rb:135:in `initialize'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/control_cli.rb:135:in `new'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/control_cli.rb:135:in `send_request'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/control_cli.rb:230:in `run'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/bin/pumactl:8:in `<top (required)>'
+/home/iris/rvm/gems/ruby-2.3.1@global/bin/pumactl:22:in `load'
+/home/iris/rvm/gems/ruby-2.3.1@global/bin/pumactl:22:in `<main>'
+/home/iris/rvm/gems/ruby-2.3.1@global/bin/ruby_executable_hooks:15:in `eval'
+/home/iris/rvm/gems/ruby-2.3.1@global/bin/ruby_executable_hooks:15:in `<main>'
+=== puma startup: 2017-04-13 15:54:17 +0530 ===
+[6766] * Starting control server on unix:///tmp/puma-status-1492079057937-6766
+[6766] - Worker 1 (pid: 6776) booted, phase: 0
+[6766] - Worker 0 (pid: 6772) booted, phase: 0
+[6766] - Gracefully shutting down workers...
+[6766] === puma shutdown: 2017-04-13 15:54:27 +0530 ===
+[6766] - Goodbye!
+No such file or directory - connect(2) for /tmp/puma-status-1492079057937-6766
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/control_cli.rb:135:in `initialize'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/control_cli.rb:135:in `new'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/control_cli.rb:135:in `send_request'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/control_cli.rb:230:in `run'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/bin/pumactl:8:in `<top (required)>'
+/home/iris/rvm/gems/ruby-2.3.1@global/bin/pumactl:22:in `load'
+/home/iris/rvm/gems/ruby-2.3.1@global/bin/pumactl:22:in `<main>'
+/home/iris/rvm/gems/ruby-2.3.1@global/bin/ruby_executable_hooks:15:in `eval'
+/home/iris/rvm/gems/ruby-2.3.1@global/bin/ruby_executable_hooks:15:in `<main>'
+=== puma startup: 2017-04-13 16:01:33 +0530 ===
+[7218] * Starting control server on unix:///tmp/puma-status-1492079493595-7218
+[7218] - Worker 0 (pid: 7224) booted, phase: 0
+[7218] - Worker 1 (pid: 7228) booted, phase: 0
+[7218] - Gracefully shutting down workers...
+[7218] === puma shutdown: 2017-04-13 16:01:36 +0530 ===
+[7218] - Goodbye!
+No such file or directory - connect(2) for /tmp/puma-status-1492079493595-7218
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/control_cli.rb:135:in `initialize'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/control_cli.rb:135:in `new'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/control_cli.rb:135:in `send_request'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/lib/puma/control_cli.rb:230:in `run'
+/home/iris/rvm/gems/ruby-2.3.1@global/gems/puma-3.8.2/bin/pumactl:8:in `<top (required)>'
+/home/iris/rvm/gems/ruby-2.3.1@global/bin/pumactl:22:in `load'
+/home/iris/rvm/gems/ruby-2.3.1@global/bin/pumactl:22:in `<main>'
+/home/iris/rvm/gems/ruby-2.3.1@global/bin/ruby_executable_hooks:15:in `eval'
+/home/iris/rvm/gems/ruby-2.3.1@global/bin/ruby_executable_hooks:15:in `<main>'
