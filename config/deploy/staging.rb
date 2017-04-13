@@ -3,7 +3,7 @@
 # Defines a single server with a list of roles and multiple properties.
 # You can define all roles on a single server, or split them:
 
-  server "irisdev.corp.ooma.com", user: "root", roles: %w{app db web}, primary: true
+  server "irisdev.corp.ooma.com", user: "iris", roles: %w{app db web}, primary: true
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 
@@ -26,11 +26,11 @@ namespace :deploy do
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
     	 
-    	
-    	 execute "cd #{ current_path } && rvm use 2.3.1 && rvm gemset use global && rake db:create && rake db:migrate"
-       execute "cd #{ current_path } && rvm use 2.3.1 && rvm gemset use global && bundle install"
+       execute "cd #{ current_path } && source ~/.rvm/scripts/rvm && rvm use 2.3.1 && rvm gemset use global && bundle install"
        
-        # execute "cd #{ current_path } && rvm use 2.3.1 && rvm gemset use global && rails s -p 3001 -b0.0.0.0"
+    	 execute "cd #{ current_path } && source ~/.rvm/scripts/rvm && rvm use 2.3.1 && rvm gemset use global && rake db:drop && rake db:create && rake db:migrate"
+       
+        # execute "cd #{ current_path } && source ~/.rvm/scripts/rvm && rvm use 2.3.1 && rvm gemset use global && rails s -p 3001 -b0.0.0.0"
       
     	
  

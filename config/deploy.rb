@@ -8,7 +8,7 @@ set :repo_url, "https://github.com/kedarla/superapp.git"
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
- set :deploy_to, "/export/iris"
+ set :deploy_to, "/export/iris/testcapngpuma"
 #set :rvm_ruby_version, 'ruby-2.3.1@global'
 #set :rvm_type, :system
 # Default value for :format is :airbrussh.
