@@ -9,7 +9,7 @@
 threads 1, 6
 # Specifies the `port` that Puma will listen on to receive requests, default is 3000.
 #
-port        5000#ENV.fetch("PORT") { 5000 }
+port        3001#ENV.fetch("PORT") { 5000 }
 
 # Specifies the `environment` that Puma will run in.
 #
@@ -31,7 +31,7 @@ environment ENV.fetch("RAILS_ENV") { "development" }
 # you need to make sure to reconnect any threads in the `on_worker_boot`
 # block.
 #
-# preload_app!
+ #preload_app!
 
 # The code in the `on_worker_boot` will be called if you are using
 # clustered mode by specifying a number of `workers`. After each worker

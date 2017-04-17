@@ -25,21 +25,32 @@ namespace :deploy do
   desc "Restart application"
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
-    	 
-       execute "cp #{ current_path }/shared/config/database.yml #{ current_path }/config/database.yml"
+    	 # execute "mkdir #{shared_path}/tmp/sockets -p"
+       # execute "mkdir #{shared_path}/tmp/pids -p"
+        execute "cp #{ current_path }/shared/config/database.yml #{ current_path }/config/database.yml"
 
-       execute "cd #{ current_path } && source ~/.rvm/scripts/rvm && rvm use 2.3.1 && rvm gemset use global && bundle install"
+        #execute "cd #{ current_path } && source ~/.rvm/scripts/rvm && rvm use 2.3.1 && rvm gemset use global && bundle install"
        
-    	 execute "cd #{ current_path } && source ~/.rvm/scripts/rvm && rvm use 2.3.1 && rvm gemset use global && rake db:drop && rake db:create && rake db:migrate"
+    	# execute "cd #{ current_path } && source ~/.rvm/scripts/rvm && rvm use 2.3.1 && rvm gemset use global && rake db:drop && rake db:create && rake db:migrate"
        
-       execute "cd #{ current_path } && source ~/.rvm/scripts/rvm && rvm use 2.3.1 && rvm gemset use global && puma stop && puma start"
-      
-    	
+#       execute "cd #{ current_path } && source ~/.rvm/scripts/rvm && rvm use 2.3.1 && rvm gemset use global && RAILS_ENV=production bundle exec puma -C config/puma.rb config.ru "
+       # execute "cd #{release_path} && source ~/.rvm/scripts/rvm && rvm use 2.3.1 && rvm gemset use global  && pumactl stop --control-token foo"
+        execute "cd #{ current_path } && source ~/.rvm/scripts/rvm && rvm use 2.3.1 && rvm gemset use global  && puma --control tcp://127.0.0.1:3001 --control-token foo"
+    	  #execute "cd #{ current_path } && source ~/.rvm/scripts/rvm && rvm use 2.3.1 && rvm gemset use global  && pumactl restart --control-token foo"
  
     end
 end
 end
 
+
+  desc 'Initial Deploy'
+  namespace :deploy do
+  task :initial do
+    on roles(:app) do
+      execute "cd #{ current_path } && source ~/.rvm/scripts/rvm && rvm use 2.3.1 && rvm gemset use global  && puma --control tcp://127.0.0.1:3001 --control-token foo"
+    end
+    end
+  end
  
   
 after "deploy", "deploy:restart" # Configuration
