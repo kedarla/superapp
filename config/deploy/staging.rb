@@ -29,15 +29,18 @@ namespace :deploy do
         execute "mkdir #{shared_path}/tmp/pids -p"
         execute "cp #{ current_path }/shared/config/database.yml #{ current_path }/config/database.yml"
 
-          
+          begin
            releases = capture("ls #{File.join(fetch(:deploy_to), 'releases')}")
-             if this_host_last_release = releases.split("\n").sort[3]
-        execute "pwd"        
+             if this_host_last_release = releases.split("\n").sort[ 3]
+             
         execute "cd testcapngpuma/releases/#{ this_host_last_release } && source ~/.rvm/scripts/rvm && rvm use 2.3.1 && rvm gemset use global  && pumactl stop"          
        # execute "cd /testcapngpuma/releases/#{ this_host_last_release } && source ~/.rvm/scripts/rvm && rvm use 2.3.1 && rvm gemset use global  && puma -d"
-                     
+                    
              end
-       
+         rescue Exception => e
+            p e.inspect
+            p "there is error when stopping the puma"
+          end 
 
 
         #execute "cd #{ current_path } && ps -ef | grep puma | grep -v grep | awk '{print $2}' | xargs kill"
