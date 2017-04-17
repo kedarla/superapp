@@ -51,12 +51,11 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
-group :development do
-    gem 'capistrano',         require: false
-    gem 'capistrano-rvm',     require: false
-    gem 'capistrano-rails',   require: false
-    gem 'capistrano-bundler', require: false
-    gem 'capistrano3-puma',   require: false
-end
+ 
+    gem 'capistrano' 
+    #gem 'capistrano-rvm' 
+    #gem 'capistrano-rails' 
+    #gem 'capistrano-bundler' 
+#gem 'capistrano3-puma', github: "seuros/capistrano-puma" 
 
 gem 'puma'
