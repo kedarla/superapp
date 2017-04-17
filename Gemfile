@@ -57,5 +57,5 @@ gem 'devise'
     #gem 'capistrano-rails' 
     #gem 'capistrano-bundler' 
 #gem 'capistrano3-puma', github: "seuros/capistrano-puma" 
-
+gem "capistrano-scm-copy"
 gem 'puma'

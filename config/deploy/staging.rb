@@ -28,7 +28,19 @@ namespace :deploy do
     	  execute "mkdir #{shared_path}/tmp/sockets -p"
         execute "mkdir #{shared_path}/tmp/pids -p"
         execute "cp #{ current_path }/shared/config/database.yml #{ current_path }/config/database.yml"
-        execute "cd #{ current_path } && ps -ef | grep puma | grep -v grep | awk '{print $2}' | xargs kill"
+
+          
+           releases = capture("ls #{File.join(fetch(:deploy_to), 'releases')}")
+             if this_host_last_release = releases.split("\n").sort[3]
+        execute "pwd"        
+        execute "cd testcapngpuma/releases/#{ this_host_last_release } && source ~/.rvm/scripts/rvm && rvm use 2.3.1 && rvm gemset use global  && pumactl stop"          
+       # execute "cd /testcapngpuma/releases/#{ this_host_last_release } && source ~/.rvm/scripts/rvm && rvm use 2.3.1 && rvm gemset use global  && puma -d"
+                     
+             end
+       
+
+
+        #execute "cd #{ current_path } && ps -ef | grep puma | grep -v grep | awk '{print $2}' | xargs kill"
         
       #  execute "cd #{ current_path } && source ~/.rvm/scripts/rvm && rvm use 2.3.1 && rvm gemset use global && bundle install"
        
@@ -37,7 +49,7 @@ namespace :deploy do
 #       execute "cd #{ current_path } && source ~/.rvm/scripts/rvm && rvm use 2.3.1 && rvm gemset use global && RAILS_ENV=production bundle exec puma -C config/puma.rb config.ru "
         #execute "cd #{release_path} && source ~/.rvm/scripts/rvm && rvm use 2.3.1 && rvm gemset use global  && pumactl restart --control-token foo"
    #     execute "cd #{ current_path } && source ~/.rvm/scripts/rvm && rvm use 2.3.1 && rvm gemset use global  && puma --control tcp://127.0.0.1:3001 --control-token foo"
-    	#  execute "cd #{ current_path } && source ~/.rvm/scripts/rvm && rvm use 2.3.1 && rvm gemset use global  && puma -d"
+    	  execute "cd #{ current_path } && source ~/.rvm/scripts/rvm && rvm use 2.3.1 && rvm gemset use global  && puma -d"
  
     end
 end
