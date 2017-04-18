@@ -5,3 +5,11 @@ development:
   pool: 5
   username: postgres
   password: postgres
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: testcap_production
+  pool: 5
+  username: postgres
+  password: postgres
